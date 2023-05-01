@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "Freteme para profissinais",
+    "slug": "app-motorista",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#05425a"
+    },
+    "notification": {
+      "icon": "./assets/notification.png",
+      "color": "#FFFFFF"
+    },
+    "plugins": [
+      [
+        "expo-updates",
+        {
+          "username": "rutherles@gmail.com"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permita o acesso a sua camera."
+        }
+      ]
+    ],
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "profissionais.freteme.com",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Este aplicativo precisa acessar sua localização para fornecer uma experiência personalizada e melhor. Suas informações serão mantidas seguras e não compartilhadas com terceiros sem sua permissão."
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyDWSnciSBk2pJJ0oHy7JF-PgmRPENmxWQQ"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptiveIcon.png",
+        "backgroundColor": "#05425a"
+      },
+      "package": "com.freteme.prestador",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDWSnciSBk2pJJ0oHy7JF-PgmRPENmxWQQ"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+
+    "extra": {
+      "eas": {
+        "autoIncrement": true,
+        "projectId": "b24c100d-61ea-4d09-bd05-bbfb4c165aca"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "enabled": true,
+      "url": "https://u.expo.dev/b24c100d-61ea-4d09-bd05-bbfb4c165aca"
+    }
+  }
+}
